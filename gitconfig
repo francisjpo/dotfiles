@@ -1,0 +1,5 @@
+[user]
+  name = Francisco Pxxxx
+	email = xxxx@email.me
+[credential]
+	helper = osxkeychain
