@@ -1,5 +1,7 @@
 [user]
-  name = Francisco Pxxxx
+	name = Francisco Pxxxx
 	email = xxxx@email.me
 [credential]
 	helper = osxkeychain
+[core]
+	excludesfile = /Users/francis/.gitignore_global
