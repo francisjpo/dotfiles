@@ -5,3 +5,4 @@
 	helper = osxkeychain
 [core]
 	excludesfile = /Users/francis/.gitignore_global
+	editor = subl --wait --new-window
