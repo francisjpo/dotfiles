@@ -6,7 +6,6 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 export ARCHFLAGS="-arch x86_64"
-export GIT_EDITOR="subl --wait --new-window"
 homebrew=/usr/local/bin:/usr/local/sbin
 rubygems=~/.rbenv/versions/2.0.0-p195/bin
 export PATH=$homebrew:$rubygems:$PATH
