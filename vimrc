@@ -4,10 +4,11 @@ set nocompatible      " Use vim, no vi defaults
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
 set encoding=utf-8    " Set default encoding to UTF-8
-filetype plugin on
+filetype off          " Required by Vundle
 set history=50        " keep 50 lines of command line history
 set mouse=a           " only selects the text, keeping the line numbers out
 set mousehide         " disable mouse support in all modes
+let g:Tex_CompileRule_pdf = 'xelatex -interaction=nonstopmode $*'
 
 " Whitespace
 
@@ -54,3 +55,13 @@ set showmode                    " Show current vim mode
 " Wild settings
 set wildmode=list:longest
 set wildmenu                   " Use a scrollable menu for filename completions
+
+" Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+filetype plugin indent on      " required by Vundle
+
+" My Bundles
+Bundle 'jcf/vim-latex'
+Bundle 'kien/ctrlp.vim'
