@@ -15,8 +15,8 @@ let g:Tex_DefaultTargetFormat = "pdf"
 let g:Tex_ViewRuleComplete_pdf = '/usr/bin/open -a Skim $*.pdf' 
 
 " LaTeX-XeTeX
-command Pdflatex execute "!latexmk -pdflatex=''xelatex -synctex=1 -interaction=nonstopmode %O %S/'' -silent -pdf %"
-command Xelatex execute "!latexmk -pdflatex=''xelatex -synctex=1 -interaction=nonstopmode %O %S/'' -silent -pdf %"
+command Pdflatex execute "!latexmk -pdflatex=''xelatex -synctex=1 -interaction=nonstopmode/'' -f -silent -pdf %"
+command Xelatex execute "!latexmk -pdflatex=''xelatex -synctex=1 -interaction=nonstopmode/'' -f -silent -pdf %"
 
 " Whitespace
 
